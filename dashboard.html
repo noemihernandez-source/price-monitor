@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monitor de precios · Amazon vs. mercado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0a0f0e;
+    --panel: #121817;
+    --panel-border: #232c2a;
+    --text: #e8ece9;
+    --muted: #7c8b87;
+    --ok: #4fae84;
+    --ok-dim: #1c2c25;
+    --alert: #e8543e;
+    --alert-dim: #2c1a17;
+    --warn: #d9a441;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'JetBrains Mono', monospace;
+    padding:32px 24px 64px;
+    min-height:100vh;
+  }
+  .wrap{max-width:1080px;margin:0 auto;}
+
+  header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    flex-wrap:wrap;
+    gap:16px;
+    border-bottom:1px solid var(--panel-border);
+    padding-bottom:20px;
+    margin-bottom:28px;
+    position:relative;
+  }
+  header::after{
+    content:"";
+    position:absolute;
+    bottom:-1px;left:0;
+    height:1px;width:120px;
+    background:linear-gradient(90deg, var(--ok), transparent);
+    animation: scan 4s ease-in-out infinite;
+  }
+  @keyframes scan{
+    0%{ transform: translateX(0); opacity:.9;}
+    50%{ transform: translateX(700px); opacity:.4;}
+    100%{ transform: translateX(0); opacity:.9;}
+  }
+  h1{
+    font-family:'Space Grotesk', sans-serif;
+    font-size:22px;
+    font-weight:600;
+    margin:0 0 4px;
+    letter-spacing:-0.01em;
+  }
+  .subtitle{color:var(--muted); font-size:13px;}
+  .meta{text-align:right; font-size:12px; color:var(--muted);}
+  .meta strong{color:var(--text); font-weight:500;}
+
+  .status-strip{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:12px;
+    margin-bottom:28px;
+  }
+  .status-card{
+    background:var(--panel);
+    border:1px solid var(--panel-border);
+    border-radius:6px;
+    padding:16px 18px;
+  }
+  .status-card .num{
+    font-family:'Space Grotesk', sans-serif;
+    font-size:28px;
+    font-weight:700;
+    line-height:1;
+  }
+  .status-card .label{
+    color:var(--muted);
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    margin-top:6px;
+  }
+  .status-card.alert .num{color:var(--alert);}
+  .status-card.ok .num{color:var(--ok);}
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+    background:var(--panel);
+    border:1px solid var(--panel-border);
+    border-radius:6px;
+    overflow:hidden;
+    font-size:13px;
+  }
+  thead th{
+    text-align:left;
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    color:var(--muted);
+    padding:12px 14px;
+    border-bottom:1px solid var(--panel-border);
+  }
+  tbody td{
+    padding:12px 14px;
+    border-bottom:1px solid var(--panel-border);
+    vertical-align:middle;
+  }
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:hover{background:#161e1c;}
+
+  .product-name{font-weight:500;}
+  .sku{color:var(--muted); font-size:11px;}
+
+  .price-cell{display:flex; align-items:center; gap:8px;}
+  .price-pill{
+    padding:3px 8px;
+    border-radius:4px;
+    font-size:12.5px;
+    font-weight:500;
+    white-space:nowrap;
+  }
+  .price-pill.ok{background:var(--ok-dim); color:var(--ok);}
+  .price-pill.alert{background:var(--alert-dim); color:var(--alert);}
+  .price-pill.na{color:var(--muted);}
+  .diff{font-size:11px; color:var(--muted);}
+  .diff.alert{color:var(--alert);}
+
+  .amazon-price{font-weight:600;}
+
+  footer{
+    margin-top:24px;
+    color:var(--muted);
+    font-size:11px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Monitor de precios</h1>
+      <div class="subtitle">Amazon vs. Walmart · Farmacias del Ahorro · Mercado Libre</div>
+    </div>
+    <div class="meta" id="meta"></div>
+  </header>
+
+  <div class="status-strip" id="statusStrip"></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Amazon</th>
+        <th>Walmart</th>
+        <th>Farmacias del Ahorro</th>
+        <th>Mercado Libre</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <footer>
+    <span>Genera estos datos corriendo <code>python main.py</code>. Se actualiza solo si automatizan el cron / GitHub Action.</span>
+    <span id="footerCount"></span>
+  </footer>
+</div>
+
+<script src="dashboard_data.js"></script>
+<script>
+  // Datos de ejemplo (se usan solo si dashboard_data.js no existe todavía,
+  // es decir, antes de correr main.py por primera vez).
+  const SAMPLE = {
+    generado: new Date().toISOString(),
+    productos: [
+      {
+        sku: "MX0200046031040",
+        nombre: "WILD PROTEIN BAR PROTEINA CHOCOLATE 45g 5U DISPLAY",
+        precio_amazon: 110.00,
+        tiendas: {
+          "Walmart": {precio: 107.00, unidades:5, precio_por_unidad:21.40, metodo:"json-ld", por_debajo_de_amazon:false, diferencia:-1.40},
+          "Farmacias del Ahorro": {precio: 36.50, unidades:1, precio_por_unidad:36.50, metodo:"json-ld", por_debajo_de_amazon:false, diferencia:-16.50},
+          "Mercado Libre": {precio: 105.00, unidades:5, precio_por_unidad:21.00, metodo:"api", por_debajo_de_amazon:true, diferencia:-1.00}
+        }
+      },
+      {
+        sku: "MX0200046033040",
+        nombre: "WILD PROTEIN BAR PROTEINA CHOCOLATE BITTER 45g 5U DISPLAY",
+        precio_amazon: 115.00,
+        tiendas: {
+          "Walmart": {precio: null, unidades:5, precio_por_unidad:null, metodo:"not-found", por_debajo_de_amazon:false, diferencia:null},
+          "Farmacias del Ahorro": {precio: null, unidades:1, precio_por_unidad:null, metodo:"not-found", por_debajo_de_amazon:false, diferencia:null},
+          "Mercado Libre": {precio: null, unidades:1, precio_por_unidad:null, metodo:"not-found", por_debajo_de_amazon:false, diferencia:null}
+        }
+      }
+    ]
+  };
+
+  const data = (window.PRICE_DATA && window.PRICE_DATA.productos && window.PRICE_DATA.productos.length)
+    ? window.PRICE_DATA
+    : SAMPLE;
+  const usingSample = data === SAMPLE;
+
+  const fmt = (n) => n === null || n === undefined ? "—" : "$" + n.toLocaleString("es-MX", {minimumFractionDigits:2, maximumFractionDigits:2});
+
+  function priceCell(info){
+    if(!info || info.precio === null || info.precio === undefined){
+      return `<div class="price-cell"><span class="price-pill na">Sin dato</span></div>`;
+    }
+    const cls = info.por_debajo_de_amazon ? "alert" : "ok";
+    const diffLabel = info.diferencia === null ? "" :
+      `<span class="diff ${info.por_debajo_de_amazon ? 'alert' : ''}">${info.diferencia >= 0 ? '−' : '+'}$${Math.abs(info.diferencia).toFixed(2)}/u</span>`;
+    const packLabel = info.unidades > 1
+      ? `<span class="diff">(${fmt(info.precio)} paquete de ${info.unidades})</span>`
+      : "";
+    return `<div class="price-cell">
+      <span class="price-pill ${cls}">${fmt(info.precio_por_unidad)}/u</span>
+      ${diffLabel}
+      ${packLabel}
+    </div>`;
+  }
+
+  function render(){
+    const productos = data.productos;
+    let alertCount = 0;
+    let okCount = 0;
+
+    const rows = productos.map(p => {
+      const tiendas = p.tiendas || {};
+      Object.values(tiendas).forEach(t => t.por_debajo_de_amazon ? alertCount++ : okCount++);
+      return `<tr>
+        <td>
+          <div class="product-name">${p.nombre}</div>
+          <div class="sku">${p.sku}</div>
+        </td>
+        <td class="amazon-price">${fmt(p.precio_amazon)}</td>
+        <td>${priceCell(tiendas["Walmart"])}</td>
+        <td>${priceCell(tiendas["Farmacias del Ahorro"])}</td>
+        <td>${priceCell(tiendas["Mercado Libre"])}</td>
+      </tr>`;
+    }).join("");
+
+    document.getElementById("tableBody").innerHTML = rows;
+
+    document.getElementById("statusStrip").innerHTML = `
+      <div class="status-card ${alertCount > 0 ? 'alert' : 'ok'}">
+        <div class="num">${alertCount}</div>
+        <div class="label">Precios por debajo de Amazon</div>
+      </div>
+      <div class="status-card ok">
+        <div class="num">${okCount}</div>
+        <div class="label">Precios en regla</div>
+      </div>
+      <div class="status-card">
+        <div class="num">${productos.length}</div>
+        <div class="label">Productos monitoreados</div>
+      </div>
+    `;
+
+    const fecha = new Date(data.generado);
+    document.getElementById("meta").innerHTML = usingSample
+      ? `<strong>Datos de ejemplo</strong><br>corran main.py para ver datos reales`
+      : `Última actualización<br><strong>${fecha.toLocaleString("es-MX")}</strong>`;
+    document.getElementById("footerCount").textContent = usingSample ? "Vista previa con datos de muestra" : `${productos.length} SKUs · 3 tiendas`;
+  }
+
+  render();
+</script>
+</body>
+</html>
