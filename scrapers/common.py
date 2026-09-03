@@ -3,18 +3,10 @@ Utilidades compartidas entre scrapers.
 
 Estrategia de extracción de precio:
 1. Buscar datos estructurados JSON-LD (<script type="application/ld+json">) con
-   schema.org/Product -> offers -> price. Esto es MUCHO más estable que depender
-   de clases CSS, porque casi ningún sitio de e-commerce serio lo quita (lo usan
-   para aparecer bien en Google Shopping).
-2. Si no hay JSON-LD, caer a una lista de selectores CSS candidatos (fallback).
-
-IMPORTANTE: estos scrapers no fueron probados en vivo contra los sitios reales
-(el entorno donde los escribí no tiene acceso de red a walmart.com.mx ni a
-farmaciasdelahorro.com.mx). La lógica de extracción de JSON-LD es robusta y
-genérica, pero los selectores de fallback y las URLs de ejemplo en
-config/products.csv SÍ hay que verificarlos/ajustarlos contra las páginas
-reales antes de correr esto en producción. Ver README.md, sección
-"Calibración inicial".
+   schema.org/Product -> offers -> price.
+2. Buscar metaetiquetas Open Graph / itemprop (<meta property="product:price:amount">),
+   muy común en sitios VTEX y otros e-commerce.
+3. Si nada de eso hay, caer a una lista de selectores CSS candidatos (fallback).
 """
 import json
 import re
@@ -29,7 +21,7 @@ class PriceResult:
     price: Optional[float]
     currency: str
     in_stock: Optional[bool]
-    method: str  # "json-ld", "css-fallback", "api", o "not-found"
+    method: str  # "json-ld", "meta-tag", "css-fallback", "api", o "not-found"
     raw_snippet: str = ""
 
 
@@ -49,7 +41,6 @@ def extract_price_from_jsonld(html: str) -> Optional[PriceResult]:
         for item in candidates:
             if not isinstance(item, dict):
                 continue
-            # A veces viene envuelto en @graph
             graph = item.get("@graph")
             sub_candidates = graph if isinstance(graph, list) else [item]
             for sub in sub_candidates:
@@ -81,6 +72,34 @@ def extract_price_from_jsonld(html: str) -> Optional[PriceResult]:
 
 
 PRICE_REGEX = re.compile(r"\$?\s?(\d{1,3}(?:[.,]\d{3})*(?:\.\d{2})?)")
+
+
+def extract_price_from_meta_tags(html: str) -> Optional[PriceResult]:
+    """Fallback #2: muchos sitios (incluyendo tiendas VTEX como Farmacias del
+    Ahorro, y varios temas de e-commerce) ponen el precio en metaetiquetas
+    Open Graph / itemprop en el <head>, aunque no tengan JSON-LD completo.
+    Esto es más estable que adivinar clases CSS porque casi nadie las quita
+    (las usan para que se vea bien al compartir el link en redes)."""
+    soup = BeautifulSoup(html, "html.parser")
+    meta_candidates = [
+        {"property": "product:price:amount"},
+        {"property": "og:price:amount"},
+        {"itemprop": "price"},
+        {"name": "price"},
+    ]
+    for attrs in meta_candidates:
+        tag = soup.find("meta", attrs=attrs)
+        if not tag:
+            continue
+        content = tag.get("content")
+        if not content:
+            continue
+        try:
+            price_val = float(str(content).replace(",", ""))
+            return PriceResult(price=price_val, currency="MXN", in_stock=None, method="meta-tag")
+        except ValueError:
+            continue
+    return None
 
 
 def extract_price_from_selectors(html: str, selectors: list[str]) -> Optional[PriceResult]:
