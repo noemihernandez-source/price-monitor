@@ -22,6 +22,8 @@ FALLBACK_SELECTORS = [
 
 
 async def get_price(url: str) -> PriceResult:
+    if not url or url.strip().upper() in ("PENDIENTE", ""):
+        return PriceResult(price=None, currency="MXN", in_stock=None, method="sin-url")
     html = await fetch_rendered_html(url, wait_selector="main, body")
     result = extract_price_from_jsonld(html)
     if result:
