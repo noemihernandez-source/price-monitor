@@ -28,7 +28,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-from scrapers import farmacias_ahorro, mercadolibre, walmart
+from scrapers import amazon_keepa, farmacias_ahorro, mercadolibre, walmart
 
 BASE_DIR = Path(__file__).parent
 CONFIG_PATH = BASE_DIR / "config" / "products.csv"
@@ -41,7 +41,31 @@ DASHBOARD_JS_PATH = BASE_DIR / "dashboard_data.js"
 async def check_product(row: dict) -> dict:
     sku = row["sku"]
     nombre = row["nombre"]
-    precio_amazon = float(row["precio_amazon"])
+    # Si hay API key de Keepa Y un ASIN válido en el CSV, el precio de Amazon
+    # se consulta automáticamente. Si no, se usa el valor manual del CSV
+    # (columna precio_amazon) como respaldo -- así el sistema sigue
+    # funcionando aunque todavía no tengan la suscripción de Keepa.
+    asin = row.get("asin", "").strip()
+    precio_amazon = None
+    if amazon_keepa.KEEPA_API_KEY and asin and asin not in ("", "SIN-ASIN-CONFIRMADO"):
+        try:
+            keepa_result = amazon_keepa.get_current_price(asin)
+            precio_amazon = keepa_result["precio"]
+        except amazon_keepa.KeepaError:
+            pass  # cae al valor manual del CSV
+    if precio_amazon is None:
+        try:
+            precio_amazon = float(row["precio_amazon"])
+        except (ValueError, KeyError):
+            # Placeholder tipo "PENDIENTE-NECESITA-PRECIO-VENTA": no se puede
+            # comparar este producto todavía, se salta con un aviso claro.
+            return {
+                "sku": sku,
+                "nombre": nombre,
+                "precio_amazon": None,
+                "tiendas": {},
+                "error": "Sin precio de Amazon confirmado (ni Keepa ni CSV manual)",
+            }
     # CRÍTICO: no todas las tiendas venden el mismo tamaño de paquete del
     # mismo producto (ej. Farmacias del Ahorro vende la barra suelta,
     # Amazon/Walmart la venden en pack de 5). Comparar precio de paquete
@@ -97,10 +121,14 @@ async def run() -> list[dict]:
             resultado = await check_product(row)
         except Exception as exc:  # no queremos que un producto tumbe todo el corrido
             print(f"  ERROR en {row['sku']}: {exc}")
+            try:
+                precio_amazon_fallback = float(row["precio_amazon"])
+            except (ValueError, KeyError):
+                precio_amazon_fallback = None
             resultado = {
                 "sku": row["sku"],
                 "nombre": row["nombre"],
-                "precio_amazon": float(row["precio_amazon"]),
+                "precio_amazon": precio_amazon_fallback,
                 "tiendas": {},
                 "error": str(exc),
             }
