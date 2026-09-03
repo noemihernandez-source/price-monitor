@@ -1,0 +1,877 @@
+{
+  "generado": "2026-09-03T14:54:35.787281+00:00",
+  "productos": [
+    {
+      "sku": "MX0200046022040",
+      "nombre": "Wild Protein Caramelo 45g 5U",
+      "precio_amazon": 134.1,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 1,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX0200046030040",
+      "nombre": "Wild Protein Vegana Chocolate y Coco 45g 5U",
+      "precio_amazon": 134.1,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 1,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX0200046031040",
+      "nombre": "Wild Protein Chocolate 45g 5U",
+      "precio_amazon": 106.0,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 1,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX0200046033040",
+      "nombre": "Wild Protein Vegana Chocolate Amargo 45g 5U",
+      "precio_amazon": 107.0,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 1,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX0200046037040",
+      "nombre": "Wild Protein Chocolate y Cacahuate 45g 5U",
+      "precio_amazon": 132.84,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 1,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX00000100",
+      "nombre": "Wild Protein Vegana Chocolate y Naranja 45g 5U",
+      "precio_amazon": 126.61,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX00000000",
+      "nombre": "Wild Protein Vegana Chocolate Moka 45g 5U",
+      "precio_amazon": 132.9,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX00000601",
+      "nombre": "Wild Protein Caramelo 45g 16U",
+      "precio_amazon": 402.95,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX00000501",
+      "nombre": "Wild Protein Vegana Chocolate y Coco 45g 16U",
+      "precio_amazon": 395.16,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX00000301",
+      "nombre": "Wild Protein Chocolate 45g 16U",
+      "precio_amazon": 350.82,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX00000401",
+      "nombre": "Wild Protein Vegana Chocolate Amargo 45g 16U",
+      "precio_amazon": 406.73,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX00000201",
+      "nombre": "Wild Protein Chocolate y Cacahuate 45g 16U",
+      "precio_amazon": 397.62,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX00000101",
+      "nombre": "Wild Protein Vegana Chocolate y Naranja 45g 16U",
+      "precio_amazon": 372.16,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX00000001",
+      "nombre": "Wild Protein Vegana Chocolate Moka 45g 16U",
+      "precio_amazon": 372.16,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX03000001",
+      "nombre": "Wild Protein Pro Cookies and Cream 60g 10U",
+      "precio_amazon": 343.2,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 10,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 1,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 10,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX03000201",
+      "nombre": "Wild Protein Pro Cinnamon Roll 60g 10U",
+      "precio_amazon": 343.2,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 10,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 1,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 10,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX00000900",
+      "nombre": "Wild Protein Mini Chocolate 30g 12U",
+      "precio_amazon": 222.62,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 12,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 12,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 12,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX00001000",
+      "nombre": "Wild Protein Mini Cacahuate 30g 12U",
+      "precio_amazon": 227.5,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 12,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 12,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 12,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX00000700",
+      "nombre": "Wild Protein Lemon Pie 45g 5U",
+      "precio_amazon": 134.1,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX00000701",
+      "nombre": "Wild Protein Lemon Pie 45g 16U",
+      "precio_amazon": 407.15,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX03000000",
+      "nombre": "Wild Protein Pro Cookies and Cream 60g 4U",
+      "precio_amazon": null,
+      "tiendas": {},
+      "error": "Sin precio de Amazon confirmado en el CSV"
+    },
+    {
+      "sku": "MX03000200",
+      "nombre": "Wild Protein Pro Cinnamon Roll 60g 4U",
+      "precio_amazon": null,
+      "tiendas": {},
+      "error": "Sin precio de Amazon confirmado en el CSV"
+    },
+    {
+      "sku": "MX00001200",
+      "nombre": "Wild Protein Pack Duo 45g 24U",
+      "precio_amazon": null,
+      "tiendas": {},
+      "error": "Sin precio de Amazon confirmado en el CSV"
+    },
+    {
+      "sku": "MX00010000",
+      "nombre": "Wild Protein Granola Crunchy 250g",
+      "precio_amazon": 94.0,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 1,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 1,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 1,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX00010100",
+      "nombre": "Wild Protein Granola Apple Crunch 250g",
+      "precio_amazon": 98.1,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 1,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 1,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 1,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX01000100",
+      "nombre": "Wild Soul Cacahuate 35g 4U",
+      "precio_amazon": 76.0,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 4,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 4,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 4,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "MX01000200",
+      "nombre": "Wild Soul Frambuesa 35g 4U",
+      "precio_amazon": 68.0,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 4,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 4,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 4,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "SKU-POR-CONFIRMAR",
+      "nombre": "Wild Soul Manzana y Canela 35g 4U",
+      "precio_amazon": 68.0,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 4,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 4,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 4,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "SKU-POR-CONFIRMAR",
+      "nombre": "Wild Soul Cacahuate 35g 12U",
+      "precio_amazon": 204.0,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 12,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 12,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 12,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "SKU-POR-CONFIRMAR",
+      "nombre": "Wild Soul Frambuesa 35g 12U",
+      "precio_amazon": null,
+      "tiendas": {},
+      "error": "Sin precio de Amazon confirmado en el CSV"
+    },
+    {
+      "sku": "SKU-POR-CONFIRMAR",
+      "nombre": "Wild Soul Manzana-Canela 35g 12U",
+      "precio_amazon": 204.0,
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 12,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 12,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 12,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
+    },
+    {
+      "sku": "SKU-POR-CONFIRMAR",
+      "nombre": "Wild Protein Pack Remix Edición Limitada 45g 4U",
+      "precio_amazon": null,
+      "tiendas": {},
+      "error": "Sin precio de Amazon confirmado en el CSV"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+fecha,sku,nombre,tienda,precio,precio_amazon,por_debajo_de_amazon
+2026-09-03T14:54:35.787281+00:00,MX0200046022040,Wild Protein Caramelo 45g 5U,Walmart,,134.1,False
+2026-09-03T14:54:35.787281+00:00,MX0200046022040,Wild Protein Caramelo 45g 5U,Farmacias del Ahorro,,134.1,False
+2026-09-03T14:54:35.787281+00:00,MX0200046022040,Wild Protein Caramelo 45g 5U,Mercado Libre,,134.1,False
+2026-09-03T14:54:35.787281+00:00,MX0200046030040,Wild Protein Vegana Chocolate y Coco 45g 5U,Walmart,,134.1,False
+2026-09-03T14:54:35.787281+00:00,MX0200046030040,Wild Protein Vegana Chocolate y Coco 45g 5U,Farmacias del Ahorro,,134.1,False
+2026-09-03T14:54:35.787281+00:00,MX0200046030040,Wild Protein Vegana Chocolate y Coco 45g 5U,Mercado Libre,,134.1,False
+2026-09-03T14:54:35.787281+00:00,MX0200046031040,Wild Protein Chocolate 45g 5U,Walmart,,106.0,False
+2026-09-03T14:54:35.787281+00:00,MX0200046031040,Wild Protein Chocolate 45g 5U,Farmacias del Ahorro,,106.0,False
+2026-09-03T14:54:35.787281+00:00,MX0200046031040,Wild Protein Chocolate 45g 5U,Mercado Libre,,106.0,False
+2026-09-03T14:54:35.787281+00:00,MX0200046033040,Wild Protein Vegana Chocolate Amargo 45g 5U,Walmart,,107.0,False
+2026-09-03T14:54:35.787281+00:00,MX0200046033040,Wild Protein Vegana Chocolate Amargo 45g 5U,Farmacias del Ahorro,,107.0,False
+2026-09-03T14:54:35.787281+00:00,MX0200046033040,Wild Protein Vegana Chocolate Amargo 45g 5U,Mercado Libre,,107.0,False
+2026-09-03T14:54:35.787281+00:00,MX0200046037040,Wild Protein Chocolate y Cacahuate 45g 5U,Walmart,,132.84,False
+2026-09-03T14:54:35.787281+00:00,MX0200046037040,Wild Protein Chocolate y Cacahuate 45g 5U,Farmacias del Ahorro,,132.84,False
+2026-09-03T14:54:35.787281+00:00,MX0200046037040,Wild Protein Chocolate y Cacahuate 45g 5U,Mercado Libre,,132.84,False
+2026-09-03T14:54:35.787281+00:00,MX00000100,Wild Protein Vegana Chocolate y Naranja 45g 5U,Walmart,,126.61,False
+2026-09-03T14:54:35.787281+00:00,MX00000100,Wild Protein Vegana Chocolate y Naranja 45g 5U,Farmacias del Ahorro,,126.61,False
+2026-09-03T14:54:35.787281+00:00,MX00000100,Wild Protein Vegana Chocolate y Naranja 45g 5U,Mercado Libre,,126.61,False
+2026-09-03T14:54:35.787281+00:00,MX00000000,Wild Protein Vegana Chocolate Moka 45g 5U,Walmart,,132.9,False
+2026-09-03T14:54:35.787281+00:00,MX00000000,Wild Protein Vegana Chocolate Moka 45g 5U,Farmacias del Ahorro,,132.9,False
+2026-09-03T14:54:35.787281+00:00,MX00000000,Wild Protein Vegana Chocolate Moka 45g 5U,Mercado Libre,,132.9,False
+2026-09-03T14:54:35.787281+00:00,MX00000601,Wild Protein Caramelo 45g 16U,Walmart,,402.95,False
+2026-09-03T14:54:35.787281+00:00,MX00000601,Wild Protein Caramelo 45g 16U,Farmacias del Ahorro,,402.95,False
+2026-09-03T14:54:35.787281+00:00,MX00000601,Wild Protein Caramelo 45g 16U,Mercado Libre,,402.95,False
+2026-09-03T14:54:35.787281+00:00,MX00000501,Wild Protein Vegana Chocolate y Coco 45g 16U,Walmart,,395.16,False
+2026-09-03T14:54:35.787281+00:00,MX00000501,Wild Protein Vegana Chocolate y Coco 45g 16U,Farmacias del Ahorro,,395.16,False
+2026-09-03T14:54:35.787281+00:00,MX00000501,Wild Protein Vegana Chocolate y Coco 45g 16U,Mercado Libre,,395.16,False
+2026-09-03T14:54:35.787281+00:00,MX00000301,Wild Protein Chocolate 45g 16U,Walmart,,350.82,False
+2026-09-03T14:54:35.787281+00:00,MX00000301,Wild Protein Chocolate 45g 16U,Farmacias del Ahorro,,350.82,False
+2026-09-03T14:54:35.787281+00:00,MX00000301,Wild Protein Chocolate 45g 16U,Mercado Libre,,350.82,False
+2026-09-03T14:54:35.787281+00:00,MX00000401,Wild Protein Vegana Chocolate Amargo 45g 16U,Walmart,,406.73,False
+2026-09-03T14:54:35.787281+00:00,MX00000401,Wild Protein Vegana Chocolate Amargo 45g 16U,Farmacias del Ahorro,,406.73,False
+2026-09-03T14:54:35.787281+00:00,MX00000401,Wild Protein Vegana Chocolate Amargo 45g 16U,Mercado Libre,,406.73,False
+2026-09-03T14:54:35.787281+00:00,MX00000201,Wild Protein Chocolate y Cacahuate 45g 16U,Walmart,,397.62,False
+2026-09-03T14:54:35.787281+00:00,MX00000201,Wild Protein Chocolate y Cacahuate 45g 16U,Farmacias del Ahorro,,397.62,False
+2026-09-03T14:54:35.787281+00:00,MX00000201,Wild Protein Chocolate y Cacahuate 45g 16U,Mercado Libre,,397.62,False
+2026-09-03T14:54:35.787281+00:00,MX00000101,Wild Protein Vegana Chocolate y Naranja 45g 16U,Walmart,,372.16,False
+2026-09-03T14:54:35.787281+00:00,MX00000101,Wild Protein Vegana Chocolate y Naranja 45g 16U,Farmacias del Ahorro,,372.16,False
+2026-09-03T14:54:35.787281+00:00,MX00000101,Wild Protein Vegana Chocolate y Naranja 45g 16U,Mercado Libre,,372.16,False
+2026-09-03T14:54:35.787281+00:00,MX00000001,Wild Protein Vegana Chocolate Moka 45g 16U,Walmart,,372.16,False
+2026-09-03T14:54:35.787281+00:00,MX00000001,Wild Protein Vegana Chocolate Moka 45g 16U,Farmacias del Ahorro,,372.16,False
+2026-09-03T14:54:35.787281+00:00,MX00000001,Wild Protein Vegana Chocolate Moka 45g 16U,Mercado Libre,,372.16,False
+2026-09-03T14:54:35.787281+00:00,MX03000001,Wild Protein Pro Cookies and Cream 60g 10U,Walmart,,343.2,False
+2026-09-03T14:54:35.787281+00:00,MX03000001,Wild Protein Pro Cookies and Cream 60g 10U,Farmacias del Ahorro,,343.2,False
+2026-09-03T14:54:35.787281+00:00,MX03000001,Wild Protein Pro Cookies and Cream 60g 10U,Mercado Libre,,343.2,False
+2026-09-03T14:54:35.787281+00:00,MX03000201,Wild Protein Pro Cinnamon Roll 60g 10U,Walmart,,343.2,False
+2026-09-03T14:54:35.787281+00:00,MX03000201,Wild Protein Pro Cinnamon Roll 60g 10U,Farmacias del Ahorro,,343.2,False
+2026-09-03T14:54:35.787281+00:00,MX03000201,Wild Protein Pro Cinnamon Roll 60g 10U,Mercado Libre,,343.2,False
+2026-09-03T14:54:35.787281+00:00,MX00000900,Wild Protein Mini Chocolate 30g 12U,Walmart,,222.62,False
+2026-09-03T14:54:35.787281+00:00,MX00000900,Wild Protein Mini Chocolate 30g 12U,Farmacias del Ahorro,,222.62,False
+2026-09-03T14:54:35.787281+00:00,MX00000900,Wild Protein Mini Chocolate 30g 12U,Mercado Libre,,222.62,False
+2026-09-03T14:54:35.787281+00:00,MX00001000,Wild Protein Mini Cacahuate 30g 12U,Walmart,,227.5,False
+2026-09-03T14:54:35.787281+00:00,MX00001000,Wild Protein Mini Cacahuate 30g 12U,Farmacias del Ahorro,,227.5,False
+2026-09-03T14:54:35.787281+00:00,MX00001000,Wild Protein Mini Cacahuate 30g 12U,Mercado Libre,,227.5,False
+2026-09-03T14:54:35.787281+00:00,MX00000700,Wild Protein Lemon Pie 45g 5U,Walmart,,134.1,False
+2026-09-03T14:54:35.787281+00:00,MX00000700,Wild Protein Lemon Pie 45g 5U,Farmacias del Ahorro,,134.1,False
+2026-09-03T14:54:35.787281+00:00,MX00000700,Wild Protein Lemon Pie 45g 5U,Mercado Libre,,134.1,False
+2026-09-03T14:54:35.787281+00:00,MX00000701,Wild Protein Lemon Pie 45g 16U,Walmart,,407.15,False
+2026-09-03T14:54:35.787281+00:00,MX00000701,Wild Protein Lemon Pie 45g 16U,Farmacias del Ahorro,,407.15,False
+2026-09-03T14:54:35.787281+00:00,MX00000701,Wild Protein Lemon Pie 45g 16U,Mercado Libre,,407.15,False
+2026-09-03T14:54:35.787281+00:00,MX00010000,Wild Protein Granola Crunchy 250g,Walmart,,94.0,False
+2026-09-03T14:54:35.787281+00:00,MX00010000,Wild Protein Granola Crunchy 250g,Farmacias del Ahorro,,94.0,False
+2026-09-03T14:54:35.787281+00:00,MX00010000,Wild Protein Granola Crunchy 250g,Mercado Libre,,94.0,False
+2026-09-03T14:54:35.787281+00:00,MX00010100,Wild Protein Granola Apple Crunch 250g,Walmart,,98.1,False
+2026-09-03T14:54:35.787281+00:00,MX00010100,Wild Protein Granola Apple Crunch 250g,Farmacias del Ahorro,,98.1,False
+2026-09-03T14:54:35.787281+00:00,MX00010100,Wild Protein Granola Apple Crunch 250g,Mercado Libre,,98.1,False
+2026-09-03T14:54:35.787281+00:00,MX01000100,Wild Soul Cacahuate 35g 4U,Walmart,,76.0,False
+2026-09-03T14:54:35.787281+00:00,MX01000100,Wild Soul Cacahuate 35g 4U,Farmacias del Ahorro,,76.0,False
+2026-09-03T14:54:35.787281+00:00,MX01000100,Wild Soul Cacahuate 35g 4U,Mercado Libre,,76.0,False
+2026-09-03T14:54:35.787281+00:00,MX01000200,Wild Soul Frambuesa 35g 4U,Walmart,,68.0,False
+2026-09-03T14:54:35.787281+00:00,MX01000200,Wild Soul Frambuesa 35g 4U,Farmacias del Ahorro,,68.0,False
+2026-09-03T14:54:35.787281+00:00,MX01000200,Wild Soul Frambuesa 35g 4U,Mercado Libre,,68.0,False
+2026-09-03T14:54:35.787281+00:00,SKU-POR-CONFIRMAR,Wild Soul Manzana y Canela 35g 4U,Walmart,,68.0,False
+2026-09-03T14:54:35.787281+00:00,SKU-POR-CONFIRMAR,Wild Soul Manzana y Canela 35g 4U,Farmacias del Ahorro,,68.0,False
+2026-09-03T14:54:35.787281+00:00,SKU-POR-CONFIRMAR,Wild Soul Manzana y Canela 35g 4U,Mercado Libre,,68.0,False
+2026-09-03T14:54:35.787281+00:00,SKU-POR-CONFIRMAR,Wild Soul Cacahuate 35g 12U,Walmart,,204.0,False
+2026-09-03T14:54:35.787281+00:00,SKU-POR-CONFIRMAR,Wild Soul Cacahuate 35g 12U,Farmacias del Ahorro,,204.0,False
+2026-09-03T14:54:35.787281+00:00,SKU-POR-CONFIRMAR,Wild Soul Cacahuate 35g 12U,Mercado Libre,,204.0,False
+2026-09-03T14:54:35.787281+00:00,SKU-POR-CONFIRMAR,Wild Soul Manzana-Canela 35g 12U,Walmart,,204.0,False
+2026-09-03T14:54:35.787281+00:00,SKU-POR-CONFIRMAR,Wild Soul Manzana-Canela 35g 12U,Farmacias del Ahorro,,204.0,False
+2026-09-03T14:54:35.787281+00:00,SKU-POR-CONFIRMAR,Wild Soul Manzana-Canela 35g 12U,Mercado Libre,,204.0,False
