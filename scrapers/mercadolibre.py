@@ -67,6 +67,8 @@ def get_lowest_price_by_search(query: str, site: str = "MLM") -> PriceResult:
 
 def get_price(url_or_query: str) -> PriceResult:
     """Punto de entrada único: detecta si le pasaron un ID/URL de ML o un texto de búsqueda."""
+    if not url_or_query or url_or_query.strip().upper() in ("PENDIENTE", ""):
+        return PriceResult(price=None, currency="MXN", in_stock=None, method="sin-url")
     item_id = _extract_item_id(url_or_query)
     if item_id:
         return get_price_by_item_id(item_id)
