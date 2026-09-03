@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-03T14:54:35.787281+00:00",
+  "generado": "2026-09-03T15:18:35.791439+00:00",
   "productos": [
     {
       "sku": "MX0200046022040",
@@ -15,12 +15,12 @@
           "diferencia": null
         },
         "Farmacias del Ahorro": {
-          "precio": null,
+          "precio": 36.5,
           "unidades": 1,
-          "precio_por_unidad": null,
-          "metodo": "not-found",
+          "precio_por_unidad": 36.5,
+          "metodo": "meta-tag",
           "por_debajo_de_amazon": false,
-          "diferencia": null
+          "diferencia": -9.68
         },
         "Mercado Libre": {
           "precio": null,
@@ -46,12 +46,12 @@
           "diferencia": null
         },
         "Farmacias del Ahorro": {
-          "precio": null,
+          "precio": 37.5,
           "unidades": 1,
-          "precio_por_unidad": null,
-          "metodo": "not-found",
+          "precio_por_unidad": 37.5,
+          "metodo": "meta-tag",
           "por_debajo_de_amazon": false,
-          "diferencia": null
+          "diferencia": -10.68
         },
         "Mercado Libre": {
           "precio": null,
@@ -77,12 +77,12 @@
           "diferencia": null
         },
         "Farmacias del Ahorro": {
-          "precio": null,
+          "precio": 36.5,
           "unidades": 1,
-          "precio_por_unidad": null,
-          "metodo": "not-found",
+          "precio_por_unidad": 36.5,
+          "metodo": "meta-tag",
           "por_debajo_de_amazon": false,
-          "diferencia": null
+          "diferencia": -15.3
         },
         "Mercado Libre": {
           "precio": null,
@@ -108,12 +108,12 @@
           "diferencia": null
         },
         "Farmacias del Ahorro": {
-          "precio": null,
+          "precio": 36.5,
           "unidades": 1,
-          "precio_por_unidad": null,
-          "metodo": "not-found",
+          "precio_por_unidad": 36.5,
+          "metodo": "meta-tag",
           "por_debajo_de_amazon": false,
-          "diferencia": null
+          "diferencia": -15.1
         },
         "Mercado Libre": {
           "precio": null,
@@ -139,12 +139,12 @@
           "diferencia": null
         },
         "Farmacias del Ahorro": {
-          "precio": null,
+          "precio": 36.5,
           "unidades": 1,
-          "precio_por_unidad": null,
-          "metodo": "not-found",
+          "precio_por_unidad": 36.5,
+          "metodo": "meta-tag",
           "por_debajo_de_amazon": false,
-          "diferencia": null
+          "diferencia": -9.93
         },
         "Mercado Libre": {
           "precio": null,
@@ -449,12 +449,12 @@
           "diferencia": null
         },
         "Farmacias del Ahorro": {
-          "precio": null,
+          "precio": 45.5,
           "unidades": 1,
-          "precio_por_unidad": null,
-          "metodo": "not-found",
+          "precio_por_unidad": 45.5,
+          "metodo": "meta-tag",
           "por_debajo_de_amazon": false,
-          "diferencia": null
+          "diferencia": -11.18
         },
         "Mercado Libre": {
           "precio": null,
@@ -480,12 +480,12 @@
           "diferencia": null
         },
         "Farmacias del Ahorro": {
-          "precio": null,
+          "precio": 45.5,
           "unidades": 1,
-          "precio_por_unidad": null,
-          "metodo": "not-found",
+          "precio_por_unidad": 45.5,
+          "metodo": "meta-tag",
           "por_debajo_de_amazon": false,
-          "diferencia": null
+          "diferencia": -11.18
         },
         "Mercado Libre": {
           "precio": null,
