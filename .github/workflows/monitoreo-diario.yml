@@ -19,11 +19,9 @@ jobs:
       - name: Instalar dependencias
         run: |
           pip install -r requirements.txt
-          playwright install --with-deps chromium
 
       - name: Correr monitoreo
-        run: python -m scrapers.debug_fetch
-             "https://www.walmart.com.mx/ip/barra-de-proteina-wild-foods-wild-foods-chocolate-5-pzas-45-g-c-u/00780467391102" 
+        run: python -m scrapers.debug_fetch_simple "https://www.walmart.com.mx/ip/barra-de-proteina-wild-foods-wild-foods-chocolate-5-pzas-45-g-c-u/00780467391102"
 
       - name: Guardar resultados en el repo
         run: |
