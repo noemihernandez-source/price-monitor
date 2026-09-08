@@ -184,8 +184,6 @@
 
 <script src="dashboard_data.js"></script>
 <script>
-  // Datos de ejemplo (se usan solo si dashboard_data.js no existe todavía,
-  // es decir, antes de correr main.py por primera vez).
   const SAMPLE = {
     generado: new Date().toISOString(),
     productos: [
@@ -221,7 +219,8 @@
 
   function priceCell(info){
     if(!info || info.precio === null || info.precio === undefined){
-      return `<div class="price-cell"><span class="price-pill na">Sin dato</span></div>`;
+      const label = info && info.metodo === "no-vendido-aqui" ? "No lo venden" : "Sin dato";
+      return `<div class="price-cell"><span class="price-pill na">${label}</span></div>`;
     }
     const cls = info.por_debajo_de_amazon ? "alert" : "ok";
     const diffLabel = info.diferencia === null ? "" :
