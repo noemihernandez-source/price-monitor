@@ -1,10 +1,15 @@
 """
 Scraper de Farmacias del Ahorro.
+
+Este sitio SÍ funcionaba bien con Playwright directo (no tiene el bloqueo
+de Walmart), pero lo pasamos a ScraperAPI también por consistencia y para
+simplificar el proyecto (una sola forma de obtener HTML, no dos).
 """
 import asyncio
 import sys
 
-from .common import PriceResult, extract_price_from_jsonld, extract_price_from_meta_tags, extract_price_from_selectors, fetch_rendered_html
+from .common import PriceResult, extract_price_from_jsonld, extract_price_from_meta_tags, extract_price_from_selectors
+from .scraperapi_client import fetch_html
 
 FALLBACK_SELECTORS = [
     ".vtex-product-price-1-x-sellingPrice",
@@ -17,7 +22,9 @@ FALLBACK_SELECTORS = [
 async def get_price(url: str) -> PriceResult:
     if not url or url.strip().upper() in ("PENDIENTE", ""):
         return PriceResult(price=None, currency="MXN", in_stock=None, method="sin-url")
-    html = await fetch_rendered_html(url, wait_selector="main, body")
+    if url.strip().upper().startswith("N/A"):
+        return PriceResult(price=None, currency="MXN", in_stock=None, method="no-vendido-aqui")
+    html = await asyncio.to_thread(fetch_html, url)
     result = extract_price_from_jsonld(html)
     if result:
         return result
