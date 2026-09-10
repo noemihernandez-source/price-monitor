@@ -1,10 +1,15 @@
 """
 Scraper de Walmart México.
+
+Antes usaba Playwright directo, pero Walmart bloquea ese acceso (confirmado:
+la respuesta era una página de "Verifica tu identidad", no el producto
+real). Ahora usa ScraperAPI, que ya resuelve ese bloqueo por nosotros.
 """
 import asyncio
 import sys
 
-from .common import PriceResult, extract_price_from_jsonld, extract_price_from_meta_tags, extract_price_from_selectors, fetch_rendered_html
+from .common import PriceResult, extract_price_from_jsonld, extract_price_from_meta_tags, extract_price_from_selectors
+from .scraperapi_client import fetch_html
 
 FALLBACK_SELECTORS = [
     '[data-testid="price-wrap"]',
@@ -17,7 +22,9 @@ FALLBACK_SELECTORS = [
 async def get_price(url: str) -> PriceResult:
     if not url or url.strip().upper() in ("PENDIENTE", ""):
         return PriceResult(price=None, currency="MXN", in_stock=None, method="sin-url")
-    html = await fetch_rendered_html(url, wait_selector='[data-testid="price-wrap"], main')
+    # fetch_html usa requests (sync) -- lo corremos en un thread para no
+    # bloquear el loop de asyncio mientras esperan las otras tiendas.
+    html = await asyncio.to_thread(fetch_html, url)
     result = extract_price_from_jsonld(html)
     if result:
         return result
