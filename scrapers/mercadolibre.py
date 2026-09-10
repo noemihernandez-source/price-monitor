@@ -1,80 +1,57 @@
 """
-Mercado Libre SÍ tiene una API pública oficial y gratuita, así que aquí no
-hace falta scraping (es más rápido, más estable y no hay riesgo de bloqueo).
+Scraper de Mercado Libre.
 
-Dos formas de usarla:
-1. Por ID de publicación (RECOMENDADO): si ya conoces la URL del producto,
-   el ID es la parte "MLM1234567890". Esto es exacto.
-2. Por búsqueda de texto (fallback): usa el nombre del producto.
-
-Docs: https://developers.mercadolibre.com.mx/
+Antes usábamos su API pública sin autenticación, pero dejó de funcionar
+(confirmado: devuelve http-403 -- ahora exigen token OAuth para consultar
+precios). En vez de meternos a registrar una app y manejar tokens de
+autenticación, usamos ScraperAPI (que ya tenemos pagado para Walmart/FDA)
+para traer la página del producto directo, y sacamos el precio del HTML
+igual que en los otros scrapers.
 """
+import asyncio
 import re
 import sys
 
-import requests
+from .common import PriceResult, extract_price_from_jsonld, extract_price_from_meta_tags, extract_price_from_selectors
+from .scraperapi_client import fetch_html
 
-from .common import PriceResult
-
-API_BASE = "https://api.mercadolibre.com"
-
-
-def _extract_item_id(url_or_id: str) -> str | None:
-    match = re.search(r"(MLM-?\d{6,})", url_or_id.upper())
-    if not match:
-        return None
-    return match.group(1).replace("-", "")
+FALLBACK_SELECTORS = [
+    ".andes-money-amount__fraction",
+    '[class*="price-tag-fraction"]',
+    '[class*="price"]',
+]
 
 
-def get_price_by_item_id(item_id: str) -> PriceResult:
-    resp = requests.get(f"{API_BASE}/items/{item_id}", timeout=15)
-    if resp.status_code != 200:
-        # Distinguimos el motivo real del fallo en vez de un "not-found" ciego.
-        # Si es 401/403, muy probablemente ML ya exige autenticación (token
-        # OAuth) para este endpoint, no que el producto no exista.
-        motivo = f"http-{resp.status_code}"
-        return PriceResult(price=None, currency="MXN", in_stock=None, method=motivo, raw_snippet=resp.text[:200])
-    data = resp.json()
-    return PriceResult(
-        price=data.get("price"),
-        currency=data.get("currency_id", "MXN"),
-        in_stock=data.get("available_quantity", 0) > 0,
-        method="api",
-        raw_snippet=data.get("permalink", ""),
-    )
+def _build_search_url(query: str) -> str:
+    """Si no tenemos la URL exacta del producto, armamos una URL de
+    búsqueda en Mercado Libre con el texto -- menos preciso (puede traer
+    el precio del primer resultado, no necesariamente el mismo vendedor
+    oficial), pero mejor que nada."""
+    slug = query.strip().replace(" ", "-")
+    return f"https://listado.mercadolibre.com.mx/{slug}"
 
 
-def get_lowest_price_by_search(query: str, site: str = "MLM") -> PriceResult:
-    resp = requests.get(
-        f"{API_BASE}/sites/{site}/search",
-        params={"q": query, "limit": 10},
-        timeout=15,
-    )
-    if resp.status_code != 200:
-        motivo = f"http-{resp.status_code}"
-        return PriceResult(price=None, currency="MXN", in_stock=None, method=motivo, raw_snippet=resp.text[:200])
-    results = resp.json().get("results", [])
-    if not results:
-        return PriceResult(price=None, currency="MXN", in_stock=None, method="not-found")
-    cheapest = min(results, key=lambda r: r.get("price", float("inf")))
-    return PriceResult(
-        price=cheapest.get("price"),
-        currency=cheapest.get("currency_id", "MXN"),
-        in_stock=cheapest.get("available_quantity", 0) > 0,
-        method="api",
-        raw_snippet=cheapest.get("permalink", ""),
-    )
-
-
-def get_price(url_or_query: str) -> PriceResult:
-    """Punto de entrada único: detecta si le pasaron un ID/URL de ML o un texto de búsqueda."""
+async def get_price(url_or_query: str) -> PriceResult:
     if not url_or_query or url_or_query.strip().upper() in ("PENDIENTE", ""):
         return PriceResult(price=None, currency="MXN", in_stock=None, method="sin-url")
-    item_id = _extract_item_id(url_or_query)
-    if item_id:
-        return get_price_by_item_id(item_id)
-    return get_lowest_price_by_search(url_or_query)
+
+    is_direct_url = "mercadolibre.com" in url_or_query.lower()
+    target_url = url_or_query if is_direct_url else _build_search_url(url_or_query)
+
+    html = await asyncio.to_thread(fetch_html, target_url)
+    result = extract_price_from_jsonld(html)
+    if result:
+        return result
+    result = extract_price_from_meta_tags(html)
+    if result:
+        return result
+    result = extract_price_from_selectors(html, FALLBACK_SELECTORS)
+    if result:
+        return result
+    return PriceResult(price=None, currency="MXN", in_stock=None, method="not-found")
 
 
 if __name__ == "__main__":
-    print(get_price(sys.argv[1]))
+    url = sys.argv[1]
+    res = asyncio.run(get_price(url))
+    print(res)
