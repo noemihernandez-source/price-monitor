@@ -3,13 +3,9 @@ Mercado Libre SÍ tiene una API pública oficial y gratuita, así que aquí no
 hace falta scraping (es más rápido, más estable y no hay riesgo de bloqueo).
 
 Dos formas de usarla:
-1. Por ID de publicación (RECOMENDADO): si ya conoces la URL del producto
-   (ej. https://articulo.mercadolibre.com.mx/MLM-1234567890-...), el ID es
-   la parte "MLM1234567890". Esto es exacto: siempre trae el mismo producto.
-2. Por búsqueda de texto (fallback): usa el nombre del producto. Es más
-   ambiguo -- Mercado Libre puede tener 20 vendedores distintos del mismo
-   producto con precios distintos. Por default devolvemos el precio más bajo
-   entre los primeros resultados, que es justo lo que le importa a Amazon.
+1. Por ID de publicación (RECOMENDADO): si ya conoces la URL del producto,
+   el ID es la parte "MLM1234567890". Esto es exacto.
+2. Por búsqueda de texto (fallback): usa el nombre del producto.
 
 Docs: https://developers.mercadolibre.com.mx/
 """
@@ -33,7 +29,11 @@ def _extract_item_id(url_or_id: str) -> str | None:
 def get_price_by_item_id(item_id: str) -> PriceResult:
     resp = requests.get(f"{API_BASE}/items/{item_id}", timeout=15)
     if resp.status_code != 200:
-        return PriceResult(price=None, currency="MXN", in_stock=None, method="not-found")
+        # Distinguimos el motivo real del fallo en vez de un "not-found" ciego.
+        # Si es 401/403, muy probablemente ML ya exige autenticación (token
+        # OAuth) para este endpoint, no que el producto no exista.
+        motivo = f"http-{resp.status_code}"
+        return PriceResult(price=None, currency="MXN", in_stock=None, method=motivo, raw_snippet=resp.text[:200])
     data = resp.json()
     return PriceResult(
         price=data.get("price"),
@@ -51,7 +51,8 @@ def get_lowest_price_by_search(query: str, site: str = "MLM") -> PriceResult:
         timeout=15,
     )
     if resp.status_code != 200:
-        return PriceResult(price=None, currency="MXN", in_stock=None, method="not-found")
+        motivo = f"http-{resp.status_code}"
+        return PriceResult(price=None, currency="MXN", in_stock=None, method=motivo, raw_snippet=resp.text[:200])
     results = resp.json().get("results", [])
     if not results:
         return PriceResult(price=None, currency="MXN", in_stock=None, method="not-found")
