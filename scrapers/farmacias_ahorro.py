@@ -1,9 +1,9 @@
 """
 Scraper de Farmacias del Ahorro.
 
-Este sitio SÍ funcionaba bien con Playwright directo (no tiene el bloqueo
-de Walmart), pero lo pasamos a ScraperAPI también por consistencia y para
-simplificar el proyecto (una sola forma de obtener HTML, no dos).
+Este sitio ya funcionaba con Playwright directo, pero lo pasamos a
+ScraperAPI también por consistencia (una sola forma de obtener HTML en
+todo el proyecto, no dos distintas).
 """
 import asyncio
 import sys
