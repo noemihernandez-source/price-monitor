@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-10T14:33:17.194096+00:00",
+  "generado": "2026-09-10T15:03:09.313788+00:00",
   "productos": [
     {
       "sku": "MX0200046022040",
@@ -12,32 +12,8 @@
       "sku": "MX0200046030040",
       "nombre": "Wild Protein Vegana Chocolate y Coco 45g 5U",
       "precio_amazon": 134.1,
-      "tiendas": {
-        "Walmart": {
-          "precio": null,
-          "unidades": 5,
-          "precio_por_unidad": null,
-          "metodo": "sin-url",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        },
-        "Farmacias del Ahorro": {
-          "precio": 37.5,
-          "unidades": 1,
-          "precio_por_unidad": 37.5,
-          "metodo": "meta-tag",
-          "por_debajo_de_amazon": false,
-          "diferencia": -10.68
-        },
-        "Mercado Libre": {
-          "precio": null,
-          "unidades": 5,
-          "precio_por_unidad": null,
-          "metodo": "not-found",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        }
-      }
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.fahorro.com%2Fwild-protein-barra-proteina-chocolate-coco-45-gr.html&render=true&country_code=mx"
     },
     {
       "sku": "MX0200046031040",
@@ -302,32 +278,8 @@
       "sku": "MX03000201",
       "nombre": "Wild Protein Pro Cinnamon Roll 60g 10U",
       "precio_amazon": 343.2,
-      "tiendas": {
-        "Walmart": {
-          "precio": null,
-          "unidades": 10,
-          "precio_por_unidad": null,
-          "metodo": "sin-url",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        },
-        "Farmacias del Ahorro": {
-          "precio": 45.5,
-          "unidades": 1,
-          "precio_por_unidad": 45.5,
-          "metodo": "meta-tag",
-          "por_debajo_de_amazon": false,
-          "diferencia": -11.18
-        },
-        "Mercado Libre": {
-          "precio": null,
-          "unidades": 10,
-          "precio_por_unidad": null,
-          "metodo": "not-found",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        }
-      }
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.fahorro.com%2Fwild-protein-pro-cinnamon-roll-barra-60-g.html&render=true&country_code=mx"
     },
     {
       "sku": "MX00000900",
