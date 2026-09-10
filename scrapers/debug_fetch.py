@@ -1,20 +1,26 @@
 """
-Herramienta de diagnóstico -- úsala si Walmart o Farmacias del Ahorro
-siguen saliendo "not-found" después del fix de meta tags.
+Herramienta de diagnóstico -- úsala si alguna tienda sigue saliendo
+"not-found" y quieres ver qué está devolviendo la página realmente.
+
+Uso:
+    python -m scrapers.debug_fetch "https://www.walmart.com.mx/ip/..."
 """
-import asyncio
 import re
 import sys
 
-from .common import fetch_rendered_html
+from .scraperapi_client import fetch_html
 
 
-async def debug(url: str):
-    html = await fetch_rendered_html(url)
+def debug(url: str):
+    html = fetch_html(url)
 
     with open("debug_output.html", "w", encoding="utf-8") as f:
         f.write(html)
     print(f"HTML guardado en debug_output.html ({len(html)} caracteres)")
+
+    print("\n--- PRIMEROS 1500 CARACTERES DEL HTML ---")
+    print(html[:1500])
+    print("--- FIN DEL EXTRACTO ---\n")
 
     price_pattern = re.compile(r'[\$]\s?\d{1,3}(?:[.,]\d{3})*(?:\.\d{2})?')
     matches = price_pattern.findall(html)
@@ -33,4 +39,4 @@ async def debug(url: str):
 
 
 if __name__ == "__main__":
-    asyncio.run(debug(sys.argv[1]))
+    debug(sys.argv[1])
