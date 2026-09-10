@@ -63,11 +63,14 @@ async def check_product(row: dict) -> dict:
     unidades_amazon = int(row.get("unidades_amazon", 1) or 1)
     precio_amazon_unidad = precio_amazon / unidades_amazon
 
-    walmart_result = await walmart.get_price(row["url_walmart"])
-    fda_result = await farmacias_ahorro.get_price(row["url_farmacias_ahorro"])
-    # La llamada a Mercado Libre es sync (usa requests), la corremos en un
-    # thread para no bloquear el loop de asyncio mientras esperan las otras.
-    ml_result = await asyncio.to_thread(mercadolibre.get_price, row["mercadolibre_query"])
+    # Las 3 tiendas se consultan AL MISMO TIEMPO (no una tras otra) para que
+    # la corrida completa no tarde tanto -- cada solicitud a través de
+    # ScraperAPI puede tardar varios segundos.
+    walmart_result, fda_result, ml_result = await asyncio.gather(
+        walmart.get_price(row["url_walmart"]),
+        farmacias_ahorro.get_price(row["url_farmacias_ahorro"]),
+        mercadolibre.get_price(row["mercadolibre_query"]),
+    )
 
     tiendas = {
         "Walmart": (walmart_result, int(row.get("unidades_walmart", 1) or 1)),
