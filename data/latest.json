@@ -1,36 +1,12 @@
 {
-  "generado": "2026-09-10T17:24:12.198001+00:00",
+  "generado": "2026-09-11T13:15:43.578880+00:00",
   "productos": [
     {
       "sku": "MX0200046022040",
       "nombre": "Wild Protein Caramelo 45g 5U",
       "precio_amazon": 134.1,
-      "tiendas": {
-        "Walmart": {
-          "precio": 106.0,
-          "unidades": 5,
-          "precio_por_unidad": 21.2,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": true,
-          "diferencia": 5.62
-        },
-        "Farmacias del Ahorro": {
-          "precio": 36.5,
-          "unidades": 1,
-          "precio_por_unidad": 36.5,
-          "metodo": "meta-tag",
-          "por_debajo_de_amazon": false,
-          "diferencia": -9.68
-        },
-        "Mercado Libre": {
-          "precio": null,
-          "unidades": 5,
-          "precio_por_unidad": null,
-          "metodo": "not-found",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        }
-      }
+      "tiendas": {},
+      "error": "HTTPSConnectionPool(host='api.scraperapi.com', port=443): Read timed out. (read timeout=70)"
     },
     {
       "sku": "MX0200046030040",
