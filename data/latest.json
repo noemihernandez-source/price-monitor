@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-14T13:17:12.063609+00:00",
+  "generado": "2026-09-15T13:14:45.661516+00:00",
   "productos": [
     {
       "sku": "MX0200046022040",
@@ -129,32 +129,8 @@
       "sku": "MX0200046037040",
       "nombre": "Wild Protein Chocolate y Cacahuate 45g 5U",
       "precio_amazon": 132.84,
-      "tiendas": {
-        "Walmart": {
-          "precio": 105.0,
-          "unidades": 5,
-          "precio_por_unidad": 21.0,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": true,
-          "diferencia": 5.57
-        },
-        "Farmacias del Ahorro": {
-          "precio": 36.5,
-          "unidades": 1,
-          "precio_por_unidad": 36.5,
-          "metodo": "meta-tag",
-          "por_debajo_de_amazon": false,
-          "diferencia": -9.93
-        },
-        "Mercado Libre": {
-          "precio": null,
-          "unidades": 5,
-          "precio_por_unidad": null,
-          "metodo": "not-found",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        }
-      }
+      "tiendas": {},
+      "error": "404 Client Error: Not Found for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.walmart.com.mx%2Fip%2FBarra-de-proteina-Wild-Foods-Wild-Foods-sabor-chocolate-cacahuate-225-g%2F00780467391104&render=false&country_code=mx"
     },
     {
       "sku": "MX00000100",
