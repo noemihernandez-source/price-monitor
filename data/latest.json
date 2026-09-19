@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-18T13:16:19.432557+00:00",
+  "generado": "2026-09-19T13:13:19.399533+00:00",
   "productos": [
     {
       "sku": "MX0200046022040",
@@ -439,8 +439,32 @@
       "sku": "MX03000001",
       "nombre": "Wild Protein Pro Cookies and Cream 60g 10U",
       "precio_amazon": 343.2,
-      "tiendas": {},
-      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarra-wild-protein-pro-cookies-cream-10-unidades-cookies-cream%2Fp%2FMLM52638083&render=false&country_code=mx"
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 10,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": 45.5,
+          "unidades": 1,
+          "precio_por_unidad": 45.5,
+          "metodo": "meta-tag",
+          "por_debajo_de_amazon": false,
+          "diferencia": -11.18
+        },
+        "Mercado Libre": {
+          "precio": null,
+          "unidades": 10,
+          "precio_por_unidad": null,
+          "metodo": "not-found",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        }
+      }
     },
     {
       "sku": "MX03000201",
@@ -464,12 +488,12 @@
           "diferencia": -11.18
         },
         "Mercado Libre": {
-          "precio": 359.2,
+          "precio": null,
           "unidades": 10,
-          "precio_por_unidad": 35.92,
-          "metodo": "json-ld",
+          "precio_por_unidad": null,
+          "metodo": "not-found",
           "por_debajo_de_amazon": false,
-          "diferencia": -1.6
+          "diferencia": null
         }
       }
     },
