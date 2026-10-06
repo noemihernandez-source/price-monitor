@@ -1,33 +1,33 @@
 {
-  "generado": "2026-10-04T17:19:24.511289+00:00",
+  "generado": "2026-10-06T18:48:44.242835+00:00",
   "productos": [
     {
       "sku": "MX0200046022040",
       "nombre": "Wild Protein Caramelo 45g 5U",
       "precio_amazon": 134.1,
       "tiendas": {},
-      "error": "403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarritas-de-proteina-wild-foods-sabor-caramelo-pack-x5%2Fp%2FMLM27865332&render=false&country_code=mx"
+      "error": "403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.fahorro.com%2Fwild-protein-barra-de-proteina-caramelo-45-gr.html&render=false&country_code=mx"
     },
     {
       "sku": "MX0200046030040",
       "nombre": "Wild Protein Vegana Chocolate y Coco 45g 5U",
       "precio_amazon": 134.1,
       "tiendas": {},
-      "error": "403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.fahorro.com%2Fwild-protein-barra-proteina-chocolate-coco-45-gr.html&render=false&country_code=mx"
+      "error": "403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarritas-de-proteina-vegana-wild-foods-sabor-chocolate-coco-pack-x5-uds%2Fp%2FMLM38280704&render=false&country_code=mx"
     },
     {
       "sku": "MX0200046031040",
       "nombre": "Wild Protein Chocolate 45g 5U",
       "precio_amazon": 106.0,
       "tiendas": {},
-      "error": "403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.fahorro.com%2Fwild-protein-barra-proteina-chocolate-45-gr.html&render=false&country_code=mx"
+      "error": "403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.walmart.com.mx%2Fip%2Fbarra-de-proteina-wild-foods-wild-foods-chocolate-5-pzas-45-g-c-u%2F00780467391102&render=false&country_code=mx"
     },
     {
       "sku": "MX0200046033040",
       "nombre": "Wild Protein Vegana Chocolate Amargo 45g 5U",
       "precio_amazon": 107.0,
       "tiendas": {},
-      "error": "403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.fahorro.com%2Fwild-protein-barra-proteina-chocolate-amargo-45-gr.html&render=false&country_code=mx"
+      "error": "403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarritas-de-proteina-wild-foods-sabor-chocolate-amargo-pack-x5%2Fp%2FMLM27909765&render=false&country_code=mx"
     },
     {
       "sku": "MX0200046037040",
@@ -41,7 +41,7 @@
       "nombre": "Wild Protein Vegana Chocolate y Naranja 45g 5U",
       "precio_amazon": 126.61,
       "tiendas": {},
-      "error": "403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Flistado.mercadolibre.com.mx%2FBarritas-de-prote%C3%ADna-Wild-Foods-sabor-Chocolate-Naranja-Pack-x5&render=false&country_code=mx"
+      "error": "403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.walmart.com.mx%2Fip%2FBarras-de-proteina-Wild-Protein-Wild-Foods-chocolate-naranja-225gr-5-barras%2F00750304887304&render=false&country_code=mx"
     },
     {
       "sku": "MX00000000",
@@ -83,7 +83,7 @@
       "nombre": "Wild Protein Chocolate y Cacahuate 45g 16U",
       "precio_amazon": 397.62,
       "tiendas": {},
-      "error": "403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.walmart.com.mx%2Fip%2Fabarrotes%2Fbarra-de-proteina-wild-foods-wild-protein-wp-chococacahuate-16u%2F00780467391105&render=false&country_code=mx"
+      "error": "403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarra-de-proteina-wild-foods-sabor-chocolate-cacahuate-16-u%2Fp%2FMLM35352517&render=false&country_code=mx"
     },
     {
       "sku": "MX00000101",
@@ -128,14 +128,14 @@
       "nombre": "Wild Protein Pro Cookies and Cream 60g 10U",
       "precio_amazon": 343.2,
       "tiendas": {},
-      "error": "403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarra-wild-protein-pro-cookies-cream-10-unidades-cookies-cream%2Fp%2FMLM52638083&render=false&country_code=mx"
+      "error": "403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.fahorro.com%2Fwild-protein-pro-cookies-cream-barra-60-g.html&render=false&country_code=mx"
     },
     {
       "sku": "MX03000201",
       "nombre": "Wild Protein Pro Cinnamon Roll 60g 10U",
       "precio_amazon": 343.2,
       "tiendas": {},
-      "error": "403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.fahorro.com%2Fwild-protein-pro-cinnamon-roll-barra-60-g.html&render=false&country_code=mx"
+      "error": "403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarra-de-proteina-wild-protein-pro-de-canela-con-21g-de-proteina-pack-de-10%2Fp%2FMLM49420986&render=false&country_code=mx"
     },
     {
       "sku": "MX00000900",
