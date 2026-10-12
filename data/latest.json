@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-11T18:38:05.307122+00:00",
+  "generado": "2026-10-12T22:20:03.828010+00:00",
   "productos": [
     {
       "sku": "MX0200046022040",
@@ -12,8 +12,32 @@
       "sku": "MX0200046030040",
       "nombre": "Wild Protein Vegana Chocolate y Coco 45g 5U",
       "precio_amazon": 134.1,
-      "tiendas": {},
-      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarritas-de-proteina-vegana-wild-foods-sabor-chocolate-coco-pack-x5-uds%2Fp%2FMLM38280704&render=false&country_code=mx"
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": 37.5,
+          "unidades": 1,
+          "precio_por_unidad": 37.5,
+          "metodo": "meta-tag",
+          "por_debajo_de_amazon": false,
+          "diferencia": -10.68
+        },
+        "Mercado Libre": {
+          "precio": 149.0,
+          "unidades": 5,
+          "precio_por_unidad": 29.8,
+          "metodo": "json-ld",
+          "por_debajo_de_amazon": false,
+          "diferencia": -2.98
+        }
+      }
     },
     {
       "sku": "MX0200046031040",
@@ -215,7 +239,7 @@
       "nombre": "Wild Protein Granola Crunchy 250g",
       "precio_amazon": 94.0,
       "tiendas": {},
-      "error": "404 Client Error: Not Found for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.walmart.com.mx%2Fip%2Fgranola-crunchy-wild-protein-wild-foods-wild-protein-granola-crunchy-doypack-250-g%2F00750304887319&render=false&country_code=mx"
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fwild-protein-granola-crunchy-semillas-doypack-250g%2Fp%2FMLM41798153&render=false&country_code=mx"
     },
     {
       "sku": "MX00010100",
