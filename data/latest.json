@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-19T19:49:24.980174+00:00",
+  "generado": "2026-10-20T18:32:14.180781+00:00",
   "productos": [
     {
       "sku": "MX0200046022040",
@@ -34,7 +34,7 @@
       "nombre": "Wild Protein Chocolate y Cacahuate 45g 5U",
       "precio_amazon": 132.84,
       "tiendas": {},
-      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Flistado.mercadolibre.com.mx%2FBarritas-de-prote%C3%ADna-Wild-Foods-sabor-Chocolate-Cacahuate-5-Barritas&render=false&country_code=mx"
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
     },
     {
       "sku": "MX00000100",
