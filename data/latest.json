@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-23T18:29:30.318454+00:00",
+  "generado": "2026-10-24T17:10:51.018659+00:00",
   "productos": [
     {
       "sku": "MX0200046022040",
@@ -20,7 +20,7 @@
       "nombre": "Wild Protein Chocolate 45g 5U",
       "precio_amazon": 106.0,
       "tiendas": {},
-      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarritas-de-proteina-wild-foods-sabor-chocolate-pack-x5-uds%2Fp%2FMLM25451233&render=false&country_code=mx"
+      "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
     },
     {
       "sku": "MX0200046033040",
