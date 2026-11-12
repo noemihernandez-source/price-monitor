@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-11T20:42:15.584310+00:00",
+  "generado": "2026-11-12T21:24:19.844366+00:00",
   "productos": [
     {
       "sku": "MX0200046022040",
@@ -12,32 +12,8 @@
       "sku": "MX0200046030040",
       "nombre": "Wild Protein Vegana Chocolate y Coco 45g 5U",
       "precio_amazon": 134.1,
-      "tiendas": {
-        "Walmart": {
-          "precio": null,
-          "unidades": 5,
-          "precio_por_unidad": null,
-          "metodo": "sin-url",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        },
-        "Farmacias del Ahorro": {
-          "precio": 37.5,
-          "unidades": 1,
-          "precio_por_unidad": 37.5,
-          "metodo": "meta-tag",
-          "por_debajo_de_amazon": false,
-          "diferencia": -10.68
-        },
-        "Mercado Libre": {
-          "precio": 145.19,
-          "unidades": 5,
-          "precio_por_unidad": 29.04,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": false,
-          "diferencia": -2.22
-        }
-      }
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarritas-de-proteina-vegana-wild-foods-sabor-chocolate-coco-pack-x5-uds%2Fp%2FMLM38280704&render=false&country_code=mx"
     },
     {
       "sku": "MX0200046031040",
@@ -85,6 +61,20 @@
       "sku": "MX00000501",
       "nombre": "Wild Protein Vegana Chocolate y Coco 45g 16U",
       "precio_amazon": 395.16,
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Flistado.mercadolibre.com.mx%2FBarritas-de-Prote%C3%ADna-Vegana-Wild-Foods-Sabor-Chocolate-Coco-16-Unidades&render=false&country_code=mx"
+    },
+    {
+      "sku": "MX00000301",
+      "nombre": "Wild Protein Chocolate 45g 16U",
+      "precio_amazon": 350.82,
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fwild-foods-protein-barra-de-proteina-sabor-chocolate-16-unidades%2Fp%2FMLM21297003&render=false&country_code=mx"
+    },
+    {
+      "sku": "MX00000401",
+      "nombre": "Wild Protein Vegana Chocolate Amargo 45g 16U",
+      "precio_amazon": 406.73,
       "tiendas": {
         "Walmart": {
           "precio": null,
@@ -103,59 +93,21 @@
           "diferencia": null
         },
         "Mercado Libre": {
-          "precio": 383.2,
+          "precio": 479.0,
           "unidades": 16,
-          "precio_por_unidad": 23.95,
+          "precio_por_unidad": 29.94,
           "metodo": "json-ld",
-          "por_debajo_de_amazon": true,
-          "diferencia": 0.75
+          "por_debajo_de_amazon": false,
+          "diferencia": -4.52
         }
       }
-    },
-    {
-      "sku": "MX00000301",
-      "nombre": "Wild Protein Chocolate 45g 16U",
-      "precio_amazon": 350.82,
-      "tiendas": {},
-      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fwild-foods-protein-barra-de-proteina-sabor-chocolate-16-unidades%2Fp%2FMLM21297003&render=false&country_code=mx"
-    },
-    {
-      "sku": "MX00000401",
-      "nombre": "Wild Protein Vegana Chocolate Amargo 45g 16U",
-      "precio_amazon": 406.73,
-      "tiendas": {},
-      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarritas-de-proteina-wild-foods-sabor-chocolate-amargo-pack-x16-uds%2Fp%2FMLM35367171&render=false&country_code=mx"
     },
     {
       "sku": "MX00000201",
       "nombre": "Wild Protein Chocolate y Cacahuate 45g 16U",
       "precio_amazon": 397.62,
-      "tiendas": {
-        "Walmart": {
-          "precio": 485.0,
-          "unidades": 16,
-          "precio_por_unidad": 30.31,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": false,
-          "diferencia": -5.46
-        },
-        "Farmacias del Ahorro": {
-          "precio": null,
-          "unidades": 16,
-          "precio_por_unidad": null,
-          "metodo": "no-vendido-aqui",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        },
-        "Mercado Libre": {
-          "precio": 383.2,
-          "unidades": 16,
-          "precio_por_unidad": 23.95,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": true,
-          "diferencia": 0.9
-        }
-      }
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarra-de-proteina-wild-foods-sabor-chocolate-cacahuate-16-u%2Fp%2FMLM35352517&render=false&country_code=mx"
     },
     {
       "sku": "MX00000101",
@@ -293,32 +245,8 @@
       "sku": "MX00010100",
       "nombre": "Wild Protein Granola Apple Crunch 250g",
       "precio_amazon": 98.1,
-      "tiendas": {
-        "Walmart": {
-          "precio": 110.0,
-          "unidades": 1,
-          "precio_por_unidad": 110.0,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": false,
-          "diferencia": -11.9
-        },
-        "Farmacias del Ahorro": {
-          "precio": null,
-          "unidades": 1,
-          "precio_por_unidad": null,
-          "metodo": "no-vendido-aqui",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        },
-        "Mercado Libre": {
-          "precio": 109.0,
-          "unidades": 1,
-          "precio_por_unidad": 109.0,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": false,
-          "diferencia": -10.9
-        }
-      }
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fwild-foods-granola-wild-protein-apple-crunch-250g%2Fp%2FMLM63327659&render=false&country_code=mx"
     },
     {
       "sku": "MX01000100",
@@ -383,8 +311,32 @@
       "sku": "SKU-POR-CONFIRMAR",
       "nombre": "Wild Soul Manzana-Canela 35g 12U",
       "precio_amazon": 204.0,
-      "tiendas": {},
-      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarra-de-frutos-secos-wild-soul-sabor-manzana-canela-12-unidades%2Fp%2FMLM65349733&render=false&country_code=mx"
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 12,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 12,
+          "precio_por_unidad": null,
+          "metodo": "no-vendido-aqui",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": 240.0,
+          "unidades": 12,
+          "precio_por_unidad": 20.0,
+          "metodo": "json-ld",
+          "por_debajo_de_amazon": false,
+          "diferencia": -3.0
+        }
+      }
     },
     {
       "sku": "SKU-POR-CONFIRMAR",
