@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-13T21:04:40.165065+00:00",
+  "generado": "2026-11-14T19:20:20.524946+00:00",
   "productos": [
     {
       "sku": "MX0200046022040",
@@ -19,8 +19,32 @@
       "sku": "MX0200046031040",
       "nombre": "Wild Protein Chocolate 45g 5U",
       "precio_amazon": 106.0,
-      "tiendas": {},
-      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarritas-de-proteina-wild-foods-sabor-chocolate-pack-x5-uds%2Fp%2FMLM25451233&render=false&country_code=mx"
+      "tiendas": {
+        "Walmart": {
+          "precio": 149.0,
+          "unidades": 5,
+          "precio_por_unidad": 29.8,
+          "metodo": "json-ld",
+          "por_debajo_de_amazon": false,
+          "diferencia": -8.6
+        },
+        "Farmacias del Ahorro": {
+          "precio": 36.5,
+          "unidades": 1,
+          "precio_por_unidad": 36.5,
+          "metodo": "meta-tag",
+          "por_debajo_de_amazon": false,
+          "diferencia": -15.3
+        },
+        "Mercado Libre": {
+          "precio": 94.5,
+          "unidades": 5,
+          "precio_por_unidad": 18.9,
+          "metodo": "json-ld",
+          "por_debajo_de_amazon": true,
+          "diferencia": 2.3
+        }
+      }
     },
     {
       "sku": "MX0200046033040",
@@ -40,15 +64,63 @@
       "sku": "MX00000100",
       "nombre": "Wild Protein Vegana Chocolate y Naranja 45g 5U",
       "precio_amazon": 126.61,
-      "tiendas": {},
-      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Flistado.mercadolibre.com.mx%2FBarritas-de-prote%C3%ADna-Wild-Foods-sabor-Chocolate-Naranja-Pack-x5&render=false&country_code=mx"
+      "tiendas": {
+        "Walmart": {
+          "precio": 149.0,
+          "unidades": 5,
+          "precio_por_unidad": 29.8,
+          "metodo": "json-ld",
+          "por_debajo_de_amazon": false,
+          "diferencia": -4.48
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "no-vendido-aqui",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": 334.94,
+          "unidades": 5,
+          "precio_por_unidad": 66.99,
+          "metodo": "json-ld",
+          "por_debajo_de_amazon": false,
+          "diferencia": -41.67
+        }
+      }
     },
     {
       "sku": "MX00000000",
       "nombre": "Wild Protein Vegana Chocolate Moka 45g 5U",
       "precio_amazon": 132.9,
-      "tiendas": {},
-      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarra-de-proteina-wild-foods-sabor-choco-moka-5-uds%2Fp%2FMLM38026095&render=false&country_code=mx"
+      "tiendas": {
+        "Walmart": {
+          "precio": 149.0,
+          "unidades": 5,
+          "precio_por_unidad": 29.8,
+          "metodo": "json-ld",
+          "por_debajo_de_amazon": false,
+          "diferencia": -3.22
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "no-vendido-aqui",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": 115.2,
+          "unidades": 5,
+          "precio_por_unidad": 23.04,
+          "metodo": "json-ld",
+          "por_debajo_de_amazon": true,
+          "diferencia": 3.54
+        }
+      }
     },
     {
       "sku": "MX00000601",
@@ -68,8 +140,32 @@
       "sku": "MX00000301",
       "nombre": "Wild Protein Chocolate 45g 16U",
       "precio_amazon": 350.82,
-      "tiendas": {},
-      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fwild-foods-protein-barra-de-proteina-sabor-chocolate-16-unidades%2Fp%2FMLM21297003&render=false&country_code=mx"
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "no-vendido-aqui",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": 316.17,
+          "unidades": 16,
+          "precio_por_unidad": 19.76,
+          "metodo": "json-ld",
+          "por_debajo_de_amazon": true,
+          "diferencia": 2.17
+        }
+      }
     },
     {
       "sku": "MX00000401",
@@ -89,8 +185,32 @@
       "sku": "MX00000101",
       "nombre": "Wild Protein Vegana Chocolate y Naranja 45g 16U",
       "precio_amazon": 372.16,
-      "tiendas": {},
-      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Flistado.mercadolibre.com.mx%2FBarritas-de-prote%C3%ADna-Wild-Foods-sabor-Chocolate-Naranja-Pack-16-Unidades-Vegana&render=false&country_code=mx"
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 16,
+          "precio_por_unidad": null,
+          "metodo": "no-vendido-aqui",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": 334.94,
+          "unidades": 16,
+          "precio_por_unidad": 20.93,
+          "metodo": "json-ld",
+          "por_debajo_de_amazon": true,
+          "diferencia": 2.33
+        }
+      }
     },
     {
       "sku": "MX00000001",
