@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-16T23:28:49.252023+00:00",
+  "generado": "2026-11-17T22:16:16.089841+00:00",
   "productos": [
     {
       "sku": "MX0200046022040",
@@ -33,8 +33,32 @@
       "sku": "MX0200046037040",
       "nombre": "Wild Protein Chocolate y Cacahuate 45g 5U",
       "precio_amazon": 132.84,
-      "tiendas": {},
-      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Flistado.mercadolibre.com.mx%2FBarritas-de-prote%C3%ADna-Wild-Foods-sabor-Chocolate-Cacahuate-5-Barritas&render=false&country_code=mx"
+      "tiendas": {
+        "Walmart": {
+          "precio": 149.0,
+          "unidades": 5,
+          "precio_por_unidad": 29.8,
+          "metodo": "json-ld",
+          "por_debajo_de_amazon": false,
+          "diferencia": -3.23
+        },
+        "Farmacias del Ahorro": {
+          "precio": 36.5,
+          "unidades": 1,
+          "precio_por_unidad": 36.5,
+          "metodo": "meta-tag",
+          "por_debajo_de_amazon": false,
+          "diferencia": -9.93
+        },
+        "Mercado Libre": {
+          "precio": 381.0,
+          "unidades": 5,
+          "precio_por_unidad": 76.2,
+          "metodo": "json-ld",
+          "por_debajo_de_amazon": false,
+          "diferencia": -49.63
+        }
+      }
     },
     {
       "sku": "MX00000100",
@@ -273,32 +297,8 @@
       "sku": "SKU-POR-CONFIRMAR",
       "nombre": "Wild Soul Cacahuate 35g 12U",
       "precio_amazon": 204.0,
-      "tiendas": {
-        "Walmart": {
-          "precio": null,
-          "unidades": 12,
-          "precio_por_unidad": null,
-          "metodo": "sin-url",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        },
-        "Farmacias del Ahorro": {
-          "precio": null,
-          "unidades": 12,
-          "precio_por_unidad": null,
-          "metodo": "no-vendido-aqui",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        },
-        "Mercado Libre": {
-          "precio": null,
-          "unidades": 12,
-          "precio_por_unidad": null,
-          "metodo": "not-found",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        }
-      }
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarra-de-frutos-secos-wild-soul-sabor-cacahuate-12-unidades%2Fp%2FMLM65349354&render=false&country_code=mx"
     },
     {
       "sku": "SKU-POR-CONFIRMAR",
