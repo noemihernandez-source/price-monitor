@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-19T21:54:52.041661+00:00",
+  "generado": "2026-11-20T21:40:24.174195+00:00",
   "productos": [
     {
       "sku": "MX0200046022040",
@@ -12,32 +12,8 @@
       "sku": "MX0200046030040",
       "nombre": "Wild Protein Vegana Chocolate y Coco 45g 5U",
       "precio_amazon": 134.1,
-      "tiendas": {
-        "Walmart": {
-          "precio": null,
-          "unidades": 5,
-          "precio_por_unidad": null,
-          "metodo": "sin-url",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        },
-        "Farmacias del Ahorro": {
-          "precio": 37.5,
-          "unidades": 1,
-          "precio_por_unidad": 37.5,
-          "metodo": "meta-tag",
-          "por_debajo_de_amazon": false,
-          "diferencia": -10.68
-        },
-        "Mercado Libre": {
-          "precio": 105.74,
-          "unidades": 5,
-          "precio_por_unidad": 21.15,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": true,
-          "diferencia": 5.67
-        }
-      }
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarritas-de-proteina-vegana-wild-foods-sabor-chocolate-coco-pack-x5-uds%2Fp%2FMLM38280704&render=false&country_code=mx"
     },
     {
       "sku": "MX0200046031040",
@@ -78,32 +54,8 @@
       "sku": "MX00000601",
       "nombre": "Wild Protein Caramelo 45g 16U",
       "precio_amazon": 402.95,
-      "tiendas": {
-        "Walmart": {
-          "precio": null,
-          "unidades": 16,
-          "precio_por_unidad": null,
-          "metodo": "sin-url",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        },
-        "Farmacias del Ahorro": {
-          "precio": null,
-          "unidades": 16,
-          "precio_por_unidad": null,
-          "metodo": "no-vendido-aqui",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        },
-        "Mercado Libre": {
-          "precio": 366.43,
-          "unidades": 16,
-          "precio_por_unidad": 22.9,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": true,
-          "diferencia": 2.28
-        }
-      }
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarritas-de-proteina-wild-foods-sabor-caramelo-pack-x-16-uds%2Fp%2FMLM37337336&render=false&country_code=mx"
     },
     {
       "sku": "MX00000501",
@@ -182,39 +134,39 @@
       "sku": "MX03000201",
       "nombre": "Wild Protein Pro Cinnamon Roll 60g 10U",
       "precio_amazon": 343.2,
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarra-de-proteina-wild-protein-pro-de-canela-con-21g-de-proteina-pack-de-10%2Fp%2FMLM49420986&render=false&country_code=mx"
+    },
+    {
+      "sku": "MX00000900",
+      "nombre": "Wild Protein Mini Chocolate 30g 12U",
+      "precio_amazon": 222.62,
       "tiendas": {
         "Walmart": {
           "precio": null,
-          "unidades": 10,
+          "unidades": 12,
           "precio_por_unidad": null,
           "metodo": "sin-url",
           "por_debajo_de_amazon": false,
           "diferencia": null
         },
         "Farmacias del Ahorro": {
-          "precio": 45.5,
-          "unidades": 1,
-          "precio_por_unidad": 45.5,
-          "metodo": "meta-tag",
+          "precio": null,
+          "unidades": 12,
+          "precio_por_unidad": null,
+          "metodo": "no-vendido-aqui",
           "por_debajo_de_amazon": false,
-          "diferencia": -11.18
+          "diferencia": null
         },
         "Mercado Libre": {
-          "precio": 359.2,
-          "unidades": 10,
-          "precio_por_unidad": 35.92,
+          "precio": 224.7,
+          "unidades": 12,
+          "precio_por_unidad": 18.72,
           "metodo": "json-ld",
           "por_debajo_de_amazon": false,
-          "diferencia": -1.6
+          "diferencia": -0.17
         }
       }
-    },
-    {
-      "sku": "MX00000900",
-      "nombre": "Wild Protein Mini Chocolate 30g 12U",
-      "precio_amazon": 222.62,
-      "tiendas": {},
-      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Flistado.mercadolibre.com.mx%2FBarritas-de-prote%C3%ADna-Mini-Wild-Foods-sabor-Chocolate-Pack-x12&render=false&country_code=mx"
     },
     {
       "sku": "MX00001000",
@@ -359,32 +311,8 @@
       "sku": "SKU-POR-CONFIRMAR",
       "nombre": "Wild Soul Manzana-Canela 35g 12U",
       "precio_amazon": 204.0,
-      "tiendas": {
-        "Walmart": {
-          "precio": null,
-          "unidades": 12,
-          "precio_por_unidad": null,
-          "metodo": "sin-url",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        },
-        "Farmacias del Ahorro": {
-          "precio": null,
-          "unidades": 12,
-          "precio_por_unidad": null,
-          "metodo": "no-vendido-aqui",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        },
-        "Mercado Libre": {
-          "precio": 240.0,
-          "unidades": 12,
-          "precio_por_unidad": 20.0,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": false,
-          "diferencia": -3.0
-        }
-      }
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarra-de-frutos-secos-wild-soul-sabor-manzana-canela-12-unidades%2Fp%2FMLM65349733&render=false&country_code=mx"
     },
     {
       "sku": "SKU-POR-CONFIRMAR",
