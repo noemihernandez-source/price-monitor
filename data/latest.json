@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-21T20:38:00.679897+00:00",
+  "generado": "2026-11-22T20:54:18.286071+00:00",
   "productos": [
     {
       "sku": "MX0200046022040",
@@ -33,63 +33,15 @@
       "sku": "MX0200046037040",
       "nombre": "Wild Protein Chocolate y Cacahuate 45g 5U",
       "precio_amazon": 132.84,
-      "tiendas": {
-        "Walmart": {
-          "precio": 149.0,
-          "unidades": 5,
-          "precio_por_unidad": 29.8,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": false,
-          "diferencia": -3.23
-        },
-        "Farmacias del Ahorro": {
-          "precio": 36.5,
-          "unidades": 1,
-          "precio_por_unidad": 36.5,
-          "metodo": "meta-tag",
-          "por_debajo_de_amazon": false,
-          "diferencia": -9.93
-        },
-        "Mercado Libre": {
-          "precio": 381.0,
-          "unidades": 5,
-          "precio_por_unidad": 76.2,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": false,
-          "diferencia": -49.63
-        }
-      }
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Flistado.mercadolibre.com.mx%2FBarritas-de-prote%C3%ADna-Wild-Foods-sabor-Chocolate-Cacahuate-5-Barritas&render=false&country_code=mx"
     },
     {
       "sku": "MX00000100",
       "nombre": "Wild Protein Vegana Chocolate y Naranja 45g 5U",
       "precio_amazon": 126.61,
-      "tiendas": {
-        "Walmart": {
-          "precio": 149.0,
-          "unidades": 5,
-          "precio_por_unidad": 29.8,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": false,
-          "diferencia": -4.48
-        },
-        "Farmacias del Ahorro": {
-          "precio": null,
-          "unidades": 5,
-          "precio_por_unidad": null,
-          "metodo": "no-vendido-aqui",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        },
-        "Mercado Libre": {
-          "precio": 335.99,
-          "unidades": 5,
-          "precio_por_unidad": 67.2,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": false,
-          "diferencia": -41.88
-        }
-      }
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Flistado.mercadolibre.com.mx%2FBarritas-de-prote%C3%ADna-Wild-Foods-sabor-Chocolate-Naranja-Pack-x5&render=false&country_code=mx"
     },
     {
       "sku": "MX00000000",
@@ -175,32 +127,8 @@
       "sku": "MX03000001",
       "nombre": "Wild Protein Pro Cookies and Cream 60g 10U",
       "precio_amazon": 343.2,
-      "tiendas": {
-        "Walmart": {
-          "precio": null,
-          "unidades": 10,
-          "precio_por_unidad": null,
-          "metodo": "sin-url",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        },
-        "Farmacias del Ahorro": {
-          "precio": 45.5,
-          "unidades": 1,
-          "precio_por_unidad": 45.5,
-          "metodo": "meta-tag",
-          "por_debajo_de_amazon": false,
-          "diferencia": -11.18
-        },
-        "Mercado Libre": {
-          "precio": 359.2,
-          "unidades": 10,
-          "precio_por_unidad": 35.92,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": false,
-          "diferencia": -1.6
-        }
-      }
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarra-wild-protein-pro-cookies-cream-10-unidades-cookies-cream%2Fp%2FMLM52638083&render=false&country_code=mx"
     },
     {
       "sku": "MX03000201",
@@ -251,8 +179,32 @@
       "sku": "MX00000700",
       "nombre": "Wild Protein Lemon Pie 45g 5U",
       "precio_amazon": 134.1,
-      "tiendas": {},
-      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Flistado.mercadolibre.com.mx%2FBarra-De-Prote%C3%ADna-sabor-Lemon-Pie-5-Unidades-Wild-Foods&render=false&country_code=mx"
+      "tiendas": {
+        "Walmart": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "sin-url",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Farmacias del Ahorro": {
+          "precio": null,
+          "unidades": 5,
+          "precio_por_unidad": null,
+          "metodo": "no-vendido-aqui",
+          "por_debajo_de_amazon": false,
+          "diferencia": null
+        },
+        "Mercado Libre": {
+          "precio": 146.25,
+          "unidades": 5,
+          "precio_por_unidad": 29.25,
+          "metodo": "json-ld",
+          "por_debajo_de_amazon": false,
+          "diferencia": -2.43
+        }
+      }
     },
     {
       "sku": "MX00000701",
