@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-24T01:19:03.406278+00:00",
+  "generado": "2026-11-24T23:39:48.967085+00:00",
   "productos": [
     {
       "sku": "MX0200046022040",
@@ -57,32 +57,8 @@
       "sku": "MX0200046037040",
       "nombre": "Wild Protein Chocolate y Cacahuate 45g 5U",
       "precio_amazon": 132.84,
-      "tiendas": {
-        "Walmart": {
-          "precio": 149.0,
-          "unidades": 5,
-          "precio_por_unidad": 29.8,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": false,
-          "diferencia": -3.23
-        },
-        "Farmacias del Ahorro": {
-          "precio": 36.5,
-          "unidades": 1,
-          "precio_por_unidad": 36.5,
-          "metodo": "meta-tag",
-          "por_debajo_de_amazon": false,
-          "diferencia": -9.93
-        },
-        "Mercado Libre": {
-          "precio": 381.0,
-          "unidades": 5,
-          "precio_por_unidad": 76.2,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": false,
-          "diferencia": -49.63
-        }
-      }
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Flistado.mercadolibre.com.mx%2FBarritas-de-prote%C3%ADna-Wild-Foods-sabor-Chocolate-Cacahuate-5-Barritas&render=false&country_code=mx"
     },
     {
       "sku": "MX00000100",
@@ -95,32 +71,8 @@
       "sku": "MX00000000",
       "nombre": "Wild Protein Vegana Chocolate Moka 45g 5U",
       "precio_amazon": 132.9,
-      "tiendas": {
-        "Walmart": {
-          "precio": 149.0,
-          "unidades": 5,
-          "precio_por_unidad": 29.8,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": false,
-          "diferencia": -3.22
-        },
-        "Farmacias del Ahorro": {
-          "precio": null,
-          "unidades": 5,
-          "precio_por_unidad": null,
-          "metodo": "no-vendido-aqui",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        },
-        "Mercado Libre": {
-          "precio": 149.0,
-          "unidades": 5,
-          "precio_por_unidad": 29.8,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": false,
-          "diferencia": -3.22
-        }
-      }
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fbarra-de-proteina-wild-foods-sabor-choco-moka-5-uds%2Fp%2FMLM38026095&render=false&country_code=mx"
     },
     {
       "sku": "MX00000601",
@@ -286,32 +238,8 @@
       "sku": "MX00010000",
       "nombre": "Wild Protein Granola Crunchy 250g",
       "precio_amazon": 94.0,
-      "tiendas": {
-        "Walmart": {
-          "precio": 110.0,
-          "unidades": 1,
-          "precio_por_unidad": 110.0,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": false,
-          "diferencia": -16.0
-        },
-        "Farmacias del Ahorro": {
-          "precio": null,
-          "unidades": 1,
-          "precio_por_unidad": null,
-          "metodo": "no-vendido-aqui",
-          "por_debajo_de_amazon": false,
-          "diferencia": null
-        },
-        "Mercado Libre": {
-          "precio": 109.0,
-          "unidades": 1,
-          "precio_por_unidad": 109.0,
-          "metodo": "json-ld",
-          "por_debajo_de_amazon": false,
-          "diferencia": -15.0
-        }
-      }
+      "tiendas": {},
+      "error": "500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=4adb8f733c936e70b9335c67f7d71b80&url=https%3A%2F%2Fwww.mercadolibre.com.mx%2Fwild-protein-granola-crunchy-semillas-doypack-250g%2Fp%2FMLM41798153&render=false&country_code=mx"
     },
     {
       "sku": "MX00010100",
